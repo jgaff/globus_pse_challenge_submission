@@ -1,0 +1,39 @@
+/*
+Custom CSS for the Globus PSE Coding Challenge front end.
+Primarily trying to make things look nice.
+Author: Jonathon Gaff
+*/
+body {
+    background: deepskyblue;
+}
+#titles {
+    text-align: center;
+    background: #D0EEFF;
+}
+#dataDiv {
+    background: #D0EEFF;
+}
+#textCell, #timeCell {
+    text-align: left;
+}
+#avatarCell { 
+    text-align: center;
+}
+#scNameCell, #replyCell {
+    text-align: center;
+    vertical-align: top;
+}
+.table-borderless > tbody > tr > td,
+.table-borderless > tbody > tr > th,
+.table-borderless > tfoot > tr > td,
+.table-borderless > tfoot > tr > th,
+.table-borderless > thead > tr > td,
+.table-borderless > thead > tr > th {
+    border: none;
+}
+#r1 {
+    border-top: 3px solid grey;
+}
+#r2 {
+    border-bottom: 3px solid grey;
+}

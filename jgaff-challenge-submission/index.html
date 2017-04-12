@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- This is the start page for the Globus PSE Coding Challenge application. -->
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Jonathon Gaff">
+        <link rel="icon" href="resources/favicon_globus.ico">
+        <title>Globus PSE Coding Challenge</title>
+        <!-- 3rd party code/libraries/etc. for the front end are in ./resources/ -->
+        <link href="resources/bootstrap.min.css" rel="stylesheet">
+        <link href="resources/bootstrap-theme.min.css" rel="stylesheet">
+        <link href="resources/theme.css" rel="stylesheet">
+        <link href="challenge_style.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- One div as a general container, and one each for the title/input and tweet list -->
+        <div class="container-fluid" id="main" role="main">
+            <div class="jumbotron" id="titles">
+                <h1>Twitter Timeline Viewer</h1>
+                <h3 id="prompt">Enter a Twitter user's ID:</h3>
+                <input id="userId" required />
+                <button type="button" class="btn btn-info" onclick="fetchTweets()">Get tweets</button>
+            </div>
+            <div class="container" id="dataDiv">
+                <p class="bg-danger lead" id="err"></p>
+                <table class="table table-borderless" id="tweetList"></table>
+            </div>
+        </div>
+        <script src="resources/moment.js"></script>
+        <script src="resources/jquery.min.js"></script>
+        <script src="resources/bootstrap.min.js"></script>
+        <script src="resources/docs.min.js"></script>
+        <script src="challenge_javascript.js"></script>
+    </body>
+</html>
